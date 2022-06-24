@@ -1,6 +1,5 @@
 ﻿#!/bin/sh
 
-
 mkdir /xraybin
 cd /xraybin
 RAY_URL="https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip"
@@ -16,8 +15,9 @@ ls -al
 # rm -rf wwwroot.tar.gz
 
 # Install Html
+mkdir /wwwroot
 wget -qO /tmp/html.zip ${Site} 
-unzip -qo /tmp/html.zip -d /usr/share/nginx
+unzip -qo /tmp/html.zip -d /wwwroot
 rm -rf /tmp/html.zip
 
 sed -e "/^#/d"\
