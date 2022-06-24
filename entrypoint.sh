@@ -1,4 +1,20 @@
 ﻿#!/bin/sh
+ 
+if [[ -z "${Vless_Path}" ]]; then
+  Vless_Path="/vless"
+fi
+echo ${Vless_Path}
+
+if [[ -z "${UUID}" ]]; then
+  UUID="f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+fi
+echo ${UUID}
+
+if [[ -z "${Vmess_Path}" ]]; then
+  Vmess_Path="/vmess"
+fi
+echo ${Vmess_Path}
+
 
 mkdir /xraybin
 cd /xraybin
