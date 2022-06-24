@@ -22,7 +22,8 @@ rm -rf /tmp/html.zip
 
 sed -e "/^#/d"\
     -e "s/\${UUID}/${UUID}/g"\
-    -e "s|\${TYPE}|${TYPE}|g"\
+    -e "s|\${Vless_Path}|${Vless_Path}|g"\
+    -e "s|\${Vmess_Path}|${Vmess_Path}|g"\
     /conf/xray.json >  /xraybin/config.json
 echo /xraybin/config.json
 cat /xraybin/config.json
@@ -30,8 +31,8 @@ cat /xraybin/config.json
 
 sed -e "/^#/d"\
     -e "s/\${PORT}/${PORT}/g"\
-    -e "s/\${UUID}/${UUID}/g"\
-    -e "s|\${TYPE}|${TYPE}|g"\
+    -e "s|\${Vless_Path}|${Vless_Path}|g"\
+    -e "s|\${Vmess_Path}|${Vmess_Path}|g"\
     -e "$s"\
     /conf/nginx.conf > /etc/nginx/conf.d/ray.conf
 echo /etc/nginx/conf.d/ray.conf
