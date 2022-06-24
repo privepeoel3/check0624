@@ -18,7 +18,7 @@
         {
             "listen": "0.0.0.0",
             "port": 12345,
-            "protocol": "${TYPE}",
+            "protocol": "vless",
             "settings": {
                 "clients": [
                     {
@@ -32,7 +32,31 @@
                 "security": "none",
                 "wsSettings": {
                     "acceptProxyProtocol": false,
-                    "path": "${UUID}-${TYPE}"
+                    "path": "${Vless_Path}"
+                }
+            }
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 12346,
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "${UUID}",
+                        "level": 0,
+                        "alterId": 0,
+                        "email": "love@xray.com"
+                    }
+                ],
+                "decryption": "none"
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "acceptProxyProtocol": false,
+                    "path": "${Vmess_Path}"
                 }
             }
         }
