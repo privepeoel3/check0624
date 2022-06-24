@@ -13,11 +13,11 @@
         },
         "Vless_Path": {
             "description": "vless路径",
-            "value": "/vless"
+            "value": "vless"
         },
         "Vmess_Path": {
             "description": "vmess路径",
-            "value": "/vmess"
+            "value": "vmess"
         },
         "UUID": {
             "description": "UUID，可在 https://www.uuidgenerator.net/ 生成",
