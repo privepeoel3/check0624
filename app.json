@@ -1,0 +1,27 @@
+﻿{
+    "name": "H-X-N",
+    "description": "Powered By Mo",
+    "keywords": [],
+    "env": {
+        "XLink": {
+            "description": "X-ray链接",
+            "value": "https://github.com/lemonengo/Test/raw/main/kano"
+        },
+        "Site": {
+            "description": "自定义伪装页面，例如：https://github.com/happyevero/Html/raw/main/FitApp-html.zip",
+            "value": "https://github.com/happyevero/Html/raw/main/FitApp-html.zip"
+        },
+        "TYPE": {
+            "description": "协议，小写的vmess或vless",
+            "value": "vless"
+        },
+        "UUID": {
+            "description": "UUID，可在 https://www.uuidgenerator.net/ 生成",
+            "value": "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+        }
+
+    },
+    "website": "",
+    "repository": "",
+    "stack": "container"
+}
