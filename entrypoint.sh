@@ -30,6 +30,7 @@ cat /xraybin/config.json
 
 sed -e "/^#/d"\
     -e "s/\${PORT}/${PORT}/g"\
+    -e "s/\${UUID}/${UUID}/g"\
     -e "s|\${TYPE}|${TYPE}|g"\
     -e "$s"\
     /conf/nginx.conf > /etc/nginx/conf.d/ray.conf
