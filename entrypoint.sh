@@ -1,7 +1,7 @@
 ﻿#!/bin/sh
  
 if [[ -z "${Vless_Path}" ]]; then
-  Vless_Path="/vless"
+  Vless_Path="vless"
 fi
 echo ${Vless_Path}
 
@@ -11,7 +11,7 @@ fi
 echo ${UUID}
 
 if [[ -z "${Vmess_Path}" ]]; then
-  Vmess_Path="/vmess"
+  Vmess_Path="vmess"
 fi
 echo ${Vmess_Path}
 
@@ -33,7 +33,7 @@ ls -al
 # Install Html
 mkdir /wwwroot
 wget -qO /tmp/html.zip ${Site} 
-unzip -qo /tmp/html.zip -d /wwwroot
+unzip -qo /tmp/html.zip -d /wwwroot 
 rm -rf /tmp/html.zip
 
 sed -e "/^#/d"\
