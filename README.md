@@ -5,6 +5,9 @@
 [![](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/privepeoel3/check0624.git)
 
 
+
+### 反代代码
+
 <details>
 <summary>CloudFlare Pages单账户反代代码</summary>
 
@@ -47,10 +50,3 @@ export default {
 };
 ```
 </details>
-
-### 客户端配置
-
-
-
-
-
